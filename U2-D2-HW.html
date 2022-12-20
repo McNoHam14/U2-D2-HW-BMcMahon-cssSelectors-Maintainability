@@ -35,7 +35,104 @@
             }
         }
 
-        
+        /* 1 */
+        /* Write a selector to target the h1 in the first “hero” section */
+
+        h1 {
+            color: red;
+        }
+
+        /* 2 */
+        /* Write a selector to target every children of the navbar */
+
+        .nav > span {
+            color: blue;
+        }
+
+        /* 3 */
+        /* Write a selector to target the “continue reading…” inside the jumbotron */
+
+        .font-weight-bold {
+            color: green;
+        }
+
+        /* 4 */
+        /* Write a selector to target the first blogpost */
+
+        .blog-post:first-of-type{
+            color: salmon;
+        }
+
+        /* 5 */
+        /* Write a selector to target the first blogpost <hr> and turn it red */
+
+        hr {
+            background-color: red;
+        }
+
+        /* 6 */
+        /* Write a selector to target the “even” links in the navbar*/ 
+
+        nav :nth-of-type(2n) {
+            color: blueviolet;
+        }
+
+        /* 7 */
+        /* Write a selector to target all the <li> into the first ordered-list in the sidebar ( Archives ) */
+
+        .blog-sidebar > .p-4 > .list-unstyled.mb-0 > li > a {
+            color: pink;
+        }
+
+
+        /*
+        .p-4 ol.list-unstyled:nth-of-type(1) li:nth-of-type(2){
+            background-color: pink;
+        }
+        */
+
+        /*
+           .list-unstyled.mb-0 a{
+            color: pink;
+        }
+        */
+
+        /* 8 */
+        /* Write a selector to target the “even” links in the navbar */
+
+        .blog-post:nth-of-type(2) {
+            background-color: green;
+        }
+
+        /* 9 */
+        /* Write a selector to target all the <li> into the first ordered-list in the sidebar ( Archives ) */
+
+        .blog-post:nth-of-type(3) li:nth-of-type(2) {
+            color: salmon;
+        }
+
+        /* 10 */
+        /* Write a selector to target the second blog-post author */
+
+        a.float-right.mr-3.mb-3 {
+            color: green;
+        }
+
+        /* 11 */
+        /* Write a selector to target the second <li> in the third blog-post unordered-list */
+
+        a.btn.btn-outline-secondary.disabled {
+            background-color:black;
+        }
+
+        /* 12 */
+
+        /* Write a selector to target the footer’s second link */
+
+        .text-center > a:nth-of-type(2){
+            color: greenyellow;
+        }
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
 </head>
@@ -366,6 +463,83 @@
 
     <a href="#" class="float-right mb-3 mr-3">Back to top</a>
     <script>
+
+        /* 13 */
+        /* Write a JavaScript functionality to add a new link into the navbar */
+
+        let link = document.createElement("span");
+        link.innerHTML = link;
+        let sp = document.createElement("span");
+        sp.appendChild(link)
+
+       /*
+       const node = document.createTextNode("New Link");
+        link.appendChild(node);
+
+        let navBarNode = document.getElementsByClassName('nav d-flex justify-content-between mb-2');
+
+        navBarNode.appendChild(link)
+        */
+
+        /* 14 */
+        // Write a JavaScript functionality to change the color of the main heading title
+
+        let nameChange = document.getElementsByTagName('h1')[0];
+        nameChange.style.color = "green";
+
+        /* 15 */
+        // Write a JavaScript functionality to change the background of the jumbotron
+
+        let bgChange = document.querySelector(".jumbotron");
+        bgChange.style.background = "blue";
+
+        /*
+        let jumboChange = document.getElementsByClassName('.jumbotron')[0];
+        jumboChange.style.background-color ="grey";
+        */
+
+        /* 16 */
+
+        // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
+
+        /*
+        function removeTwitterLink() {
+            let link = document.querySelector(
+                "aside div:nth-child(3) ol li:nth-child(2)"
+                );
+            link.remove();
+        };
+
+        window.onload(removeTwitterLink());
+        */
+        
+        /* 17 */
+        // Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
+
+        /*
+        function removeFirst50Chars() {
+            let characters = getElementBy
+            if (i = )
+        }
+        */
+
+
+        /* 18 */
+        // Write a JavaScript functionality to add a new Blog Post (div with title and text)
+
+        /* 19 */
+        // Write a JavaScript functionality to remove the last Blog Post when the user clicks on the “Older” button
+
+
+        /* 20 */
+        /* Write a JavaScript functionality that will create an alert with the name of the author every time the user hovers the mouse on an author’s name */
+
+
+        /* 21 */
+        /* EXTRA Write a JavaScript functionality that will remove the corresponding parent card from the DOM, upon clicking on their “Continue reading” link */
+
+
+
         /* JS Exercises should go here */
         // Write a JavaScript functionality to add a new link into the navbar
         // Write a JavaScript functionality to change the color of the main heading title
